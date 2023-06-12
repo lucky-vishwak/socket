@@ -2,11 +2,9 @@ const express=require('express')
 const app=express()
 const http=require('http')
 const server=http.createServer(app)
-const io=require('socket.io')(8900,{
-   cors:{
-      origin:"https://iridescent-fenglisu-a5233d.netlify.app"
-   }
-});
+const io=require('socket.io')("//url",{
+         transports: ['websocket'],
+        });
 // const io=new Server(server)
 // var io = require('socket.io')(8900,{
 //     cors:{
