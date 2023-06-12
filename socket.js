@@ -4,7 +4,7 @@ const http=require('http')
 const server=http.createServer(app)
 const io=require('socket.io')(8900,{
    cors:{
-      origin:"*"
+      origin:"https://iridescent-fenglisu-a5233d.netlify.app"
    }
 });
 // const io=new Server(server)
